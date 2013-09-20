@@ -1,0 +1,74 @@
+body {
+  background-color: black;
+}
+div.main {
+  margin: 30px 30px 30px 30px;
+  padding: 30px 30px 130px 30px;
+  color: #009999;
+  font-family: "Helvetica", Helvetica, sans-serif;
+}
+div.layer {
+  width: 100%;
+  clear: both;
+}
+div.banner {
+  margin: 20px 20px 0px 0px;
+  padding: 10px 10px 10px 30px;
+  font-size: 30pt;
+  font-weight: bold;
+  clear: both;
+}
+div.button {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0px 10px 20px;
+  background-color: #5CCCCC;
+  border: none;
+  border-radius: 40px 10px;
+  box-shadow: inset 0 0 2em #009999;
+}
+div.selected {
+  box-shadow: inset 0 0 2em #5CCCCC;
+  background-color: #009999;
+}
+div.button input {
+  /*display: none;  */
+  vertical-align: center;
+  padding: 18px 18px 18px 18px;
+}
+div.work {
+  float: right;
+  clear:left;
+  border: none;
+  border-radius: 40px 10px;
+  margin-right: 20px;
+  background-color: #009999;
+  box-shadow: inset 0 0 2em #5CCCCC;
+}
+div.work input {
+  padding: 18px 18px 18px 18px;  
+}
+div.possible {
+  visibility: hidden;
+}
+div.relation {
+  float: left;
+  margin: 10px 0px 10px 20px;
+  padding-top: 50px;
+  font-size: 22pt;
+}
+div.relation input {
+  margin-left: 50px;
+  font-size: 18pt;
+  padding-top: 54px;
+}
+div.applied {
+  visibility: hidden;
+}
+div.code {
+  font-family: courier;
+  font-size: 16pt;
+  margin: 10px 0px 10px 20px;
+  padding-top: 50px;
+}
