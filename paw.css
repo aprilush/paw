@@ -20,12 +20,12 @@ div.banner {
 }
 div.button {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: 10px 0px 10px 20px;
   background-color: #5CCCCC;
   border: none;
-  border-radius: 40px 10px;
+  border-radius: 22px 10px;
   box-shadow: inset 0 0 2em #009999;
 }
 div.selected {
@@ -35,19 +35,19 @@ div.selected {
 div.button input {
   /*display: none;  */
   vertical-align: center;
-  padding: 18px 18px 18px 18px;
+  padding: 14px 14px 14px 14px;
 }
 div.work {
   float: right;
   clear:left;
   border: none;
-  border-radius: 40px 10px;
+  border-radius: 10px 22px;
   margin-right: 20px;
   background-color: #009999;
   box-shadow: inset 0 0 2em #5CCCCC;
 }
 div.work input {
-  padding: 18px 18px 18px 18px;  
+  padding: 14px 14px 14px 14px;  
 }
 div.possible {
   visibility: hidden;
