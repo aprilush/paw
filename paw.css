@@ -29,8 +29,8 @@ div.button {
   box-shadow: inset 0 0 2em #009999;
 }
 div.selected {
-  box-shadow: inset 0 0 2em #5CCCCC;
-  background-color: #009999;
+  box-shadow: inset 0 0 1em #5CCCCC;
+  background-color: #005555;
 }
 div.button input {
   /*display: none;  */
@@ -50,25 +50,26 @@ div.work input {
   padding: 14px 14px 14px 14px;  
 }
 div.possible {
-  visibility: hidden;
 }
 div.relation {
   float: left;
   margin: 10px 0px 10px 20px;
-  padding-top: 50px;
+  padding-top: 25px;
   font-size: 22pt;
 }
 div.relation input {
   margin-left: 50px;
   font-size: 18pt;
-  padding-top: 54px;
+  padding-top: 29px;
 }
 div.applied {
-  visibility: hidden;
 }
 div.code {
   font-family: courier;
   font-size: 16pt;
   margin: 10px 0px 10px 20px;
   padding-top: 50px;
+}
+div.hidden {
+  visibility: hidden;
 }
