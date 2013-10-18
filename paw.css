@@ -1,11 +1,11 @@
 body {
   background-color: black;
+  color: #009999;
+  font-family: "Helvetica", Helvetica, sans-serif;
 }
 div.main {
   margin: 30px 30px 30px 30px;
   padding: 30px 30px 130px 30px;
-  color: #009999;
-  font-family: "Helvetica", Helvetica, sans-serif;
 }
 div.layer {
   width: 100%;
@@ -36,6 +36,8 @@ div.button input {
   /*display: none;  */
   vertical-align: center;
   padding: 14px 14px 14px 14px;
+  width: 32px;
+  height: 32px;
 }
 div.work {
   float: right;

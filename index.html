@@ -1,41 +1,69 @@
 <html>
 <head>
-    <title>PAW!!!</title>
-    <link href="paw.css" rel="stylesheet"/>
-    <script src="jquery-1.10.1.min.js" type="text/javascript"></script>
-    <script src="paw.js" type="text/javascript"></script>
+  <title>PAW!!!</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <link href="paw.css" rel="stylesheet"/> 
+  <!-- <script src="jquery-1.10.1.min.js" type="text/javascript"></script> -->
+  <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="paw.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class='main'>
-        <div class='button work' id='new'><input type='image' src="img/32/list-add.png" /></div>
+  <div class='main'>
+    <div class='button work' id='new'><input type='image' src="img/32/list-add.png" /></div>
+    <div id="new-thing-dialog" title="Add a new thing">
+      <ul>
+        <li><a href="#tab-fields">Fields</a></li>
+        <li><a href="#tab-url">PROV JSON (url)</a></li>
+        <li><a href="#tab-store-id">PROV Store</a></li>
+      </ul>
+      <div id="tab-fields">
+        <form>
+          <label for="thing-id">Unique identifier</label><br/>
+          <input type="text" name="thing-id" id="thing-id" /><br/>
+          <label for="thing-label">Name</label><br/>
+          <input type="text" name="thing-label" id="thing-label" /><br/>
+          <label for="thing-provtype">Category</label>
+          <select name="thing-provtype" id="thing-provtype">
+            <option value="entity">Entity</option>
+            <option value="agent">Agent</option>
+            <option value="activity">Activity</option>
+          </select><br/>
+          <label for="thing-logo">Image</label>
+          <select name="thing-logo" id="thing-logo">
+            <option value="Charm">Oscilloscope</option>
+            <option value="knewsticker">Newspaper</option>
+            <option value="basket">Note</option>
+            <option value="meeting-chair">Hat</option>
+            <option value="meeting-organizer">Bow</option>
+            <option value="meeting-participant">Red tie</option>
+            <option value="user-identity">User</option>
+            <option value="input-gaming">Game controller</option>
+            <option value="roll">Dice</option>
+            <option value="configure">Spanner</option>
+            <option value="edit-bomb">Bomb</option>
+            <option value="document-edit">Pencil</option>
+            <option value="system-search">Search</option>
+          </select>
+        </form>
+      </div>
+      <div id="tab-url">
+        <form>
+          <label for="thing-url">Link</label>
+          <input type="text" name="thing-url" id="thing-url" />
+        </form>
+      </div>
+      <div id="tab-store-id">
+      </div>
+    </div>
         <div class='layer'>
             <div class="banner">WHAT</div>
-<!--             <div class='button'><input type='image' id="entity1" title="entity1" provtype="entity" src="img/32/Charm.png" /></div>
-            <div class='button'><input type='image' id="entity2" title="entity2" provtype="entity" src="img/32/Charm.png" /></div>
-            <div class='button'><input type='image' id="entity3" title="entity3" provtype="entity" src="img/32/knewsticker.png" /></div>
-            <div class='button'><input type='image' id="entity4" title="entity4" provtype="entity" src="img/32/knewsticker.png" /></div>
-            <div class='button'><input type='image' id="entity5" title="entity5" provtype="entity" src="img/32/Charm.png" /></div>
-            <div class='button'><input type='image' id="entity6" title="entity6" provtype="entity" src="img/32/Charm.png" /></div>
-            <div class='button'><input type='image' id="entity7" title="entity7" provtype="entity" src="img/32/Charm.png" /></div>
-            <div class='button'><input type='image' id="entity8" title="entity8" provtype="entity" src="img/32/basket.png" /></div>
-            <div class='button'><input type='image' id="entity9" title="entity9" provtype="entity" src="img/32/basket.png" /></div>
-            <div class='button'><input type='image' id="entity10" title="entity10" provtype="entity" src="img/32/basket.png" /></div> -->
         </div>
         <div class='layer'>
             <div class="banner">WHO</div>
-<!--             <div class='button'><input type='image' id="agent1" title="agent1" provtype="agent" src="img/32/meeting-chair.png" /></div>
-            <div class='button'><input type='image' id="agent2" title="agent2" provtype="agent" src="img/32/meeting-organizer.png" /></div>
-            <div class='button'><input type='image' id="agent3" title="agent3" provtype="agent" src="img/32/user-identity.png" /></div>
-            <div class='button'><input type='image' id="agent4" title="agent4" provtype="agent" src="img/32/input-gaming.png" /></div>
-            <div class='button'><input type='image' id="agent5" title="agent5" provtype="agent" src="img/32/meeting-participant.png" /></div> -->
         </div>
         <div class='layer'>
             <div class="banner">HOW</div>
-<!--             <div class='button'><input type='image' id="activity1" title="activity1" provtype="activity" src="img/32/roll.png" /></div>
-            <div class='button'><input type='image' id="activity2" title="activity2" provtype="activity" src="img/32/configure.png" /></div>
-            <div class='button'><input type='image' id="activity3" title="activity3" provtype="activity" src="img/32/edit-bomb.png" /></div>
-            <div class='button'><input type='image' id="activity4" title="activity4" provtype="activity" src="img/32/document-edit.png" /></div>
-            <div class='button'><input type='image' id="activity5" title="activity5" provtype="activity" src="img/32/system-search.png" /></div> -->
         </div>
         <div class="button work" id='annotate'><input type='image' src="img/32/insert-link.png" /></div>
         <div class='layer possible hidden'>
