@@ -100,10 +100,10 @@ $(function() {
       $.each($.rels, function(i, stat) {
         div1 = copy_button(stat[0]);
         div2 = copy_button(stat[2]);
-        poss_div.append(div1.css("clear", "left"));
+        poss_div.append("<div class='relation' style='clear:left'><input type='checkbox' value='"+i+"'>Keep!</input></div>");
+        poss_div.append(div1);
         poss_div.append("<div class='relation'>"+stat[1]+"</div>");
         poss_div.append(div2);
-        poss_div.append("<div class='relation'><input type='checkbox' value='"+i+"'>Keep!</input></div>");
       });
     } else {
       $("div").filter(function(index) {return $(this).hasClass("possible hidden");}).addClass("hidden");
